@@ -1,0 +1,70 @@
+body, div, table, tr, td  {
+  margin: 0;
+  padding: 0;
+}
+
+.table__wrap {
+  position: relative;
+}
+
+.dynamic__table {
+  position: absolute;
+  left: 60px;
+  top: 60px;
+  margin: 3px;
+  border: 1px solid #48aae6;
+  border-spacing: 2px;
+}
+
+.dynamic__table td {
+  width: 60px;
+  height: 60px;
+  background-color: #48aae6;
+}
+
+.table__button {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  font-size: 25px;
+  font-weight: 900;
+  color: #ffffff;
+  cursor: pointer;
+  transition-property: opacity;
+  transition-duration: 0.2s;
+  text-align: center;
+  user-select: none;
+  visibility: hidden;
+}
+
+.table__button:hover {
+  opacity: 0.5;
+}
+
+.minus--button {
+  background-color: #b20000;
+}
+
+.plus--button {
+  background-color: #f3a500;
+}
+
+.top__minus {
+  left: 0%;
+  top: 0%;
+}
+
+.left__minus {
+  left: 0%;
+  top: 0%;
+}
+
+.right__plus {
+  right: 0%;
+  top: 0%;
+}
+
+.bottom__plus {
+
+}
