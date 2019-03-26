@@ -4,21 +4,23 @@ body, div, table, tr, td  {
 }
 
 .table__wrap {
+  margin: 70px;
   position: relative;
+  display: inline-block;
 }
 
 .dynamic__table {
-  position: absolute;
-  left: 60px;
-  top: 60px;
-  margin: 3px;
+  margin: 2px;
+  box-sizing: border-box;
   border: 1px solid #48aae6;
   border-spacing: 2px;
+  position: relative;
 }
 
 .dynamic__table td {
   width: 60px;
   height: 60px;
+  min-width: 60px;
   background-color: #48aae6;
 }
 
@@ -35,7 +37,6 @@ body, div, table, tr, td  {
   transition-duration: 0.2s;
   text-align: center;
   user-select: none;
-  visibility: hidden;
 }
 
 .table__button:hover {
@@ -44,6 +45,9 @@ body, div, table, tr, td  {
 
 .minus--button {
   background-color: #b20000;
+  visibility: hidden;
+  transition-property: left, top;
+  transition-duration: 0.3s;
 }
 
 .plus--button {
@@ -51,20 +55,21 @@ body, div, table, tr, td  {
 }
 
 .top__minus {
-  left: 0%;
-  top: 0%;
+  margin-left: 3px;
+  bottom: 100%;
 }
 
 .left__minus {
-  left: 0%;
-  top: 0%;
+  margin-top: 3px;
+  right: 100%;
 }
 
 .right__plus {
-  right: 0%;
-  top: 0%;
+  margin-top: 5px;
+  left: 100%;
 }
 
 .bottom__plus {
-
+  margin-left: 5px;
+  top: 100%;
 }
