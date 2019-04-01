@@ -2,20 +2,23 @@
 
 //Table start size
 const TABLE_START_STATE = 4;
+
+//Variables for cell indexes when mouseover
+let rowId;
+let colId;
+
+//Variable for button hide timer
+let hideButtonsTimer;
+
 //Variable for table
 const $DYNAMIC_TABLE = document.querySelector('.dynamic__table'); 
+
 //Variables for buttons of table
 const $TABLE_BUTTONS = document.querySelectorAll('.table__button');
 const $MINUS_BUTTON_TOP = document.querySelector('.top__minus');
 const $MINUS_BUTTON_LEFT = document.querySelector('.left__minus');
 const $PLUS_BUTTON_RIGHT = document.querySelector('.right__plus');
 const $PLUS_BUTTON_BOTTOM = document.querySelector('.bottom__plus');
-
-//Variables for cell indexes when mouseover
-let rowId;
-let colId;
-//Variable for button hide timer
-let hideButtonsTimer;
 
 //Initialize start state of the table
 window.onload = () => {
